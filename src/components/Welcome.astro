@@ -14,7 +14,8 @@ import background from '../assets/background.svg';
 				Hello from my Astro site! Pipeline test successful.
 			</h1>
 			<section id="links">
-				<a class="button" href="https://docs.astro.build">Read our docs</a>
+				<a class="button" href="/blog">Visit Blog</a>
+				<a class="button secondary" href="https://docs.astro.build">Read Astro docs</a>
 				<a href="https://astro.build/chat"
 					>Join our Discord <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36"
 						><path
@@ -111,6 +112,10 @@ import background from '../assets/background.svg';
 	#links a.button:hover {
 		color: rgb(230, 230, 230);
 		box-shadow: none;
+	}
+
+	#links a.button.secondary {
+		background: linear-gradient(83.21deg, #374151 0%, #6b7280 100%);
 	}
 
 	pre {
